@@ -1,0 +1,23 @@
+{
+  "name": "sass-nunjucks-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "sass src/sass/*.scss build/style.css",
+    "build:pug": "pug src/**/*.pug -o build",
+    "build": "pnpm '/^build:.*/'",
+    "watch:sass": "sass -w src/sass:build",
+    "watch:pug": "pug -w src/**/*.pug -o ./build",
+    "watch:serve": "browser-sync start --server build --files 'build/*.css, build/*.html'",
+    "dev": "pnpm '/^watch:.*/'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "pug-cli": "1.0.0-alpha6",
+    "sass": "^1.71.1"
+  }
+}
