@@ -1,8 +1,7 @@
 {
-  "name": "sass-nunjucks-starter",
+  "name": "pug-sass-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build:sass": "sass src/sass/*.scss build/style.css",
     "build:pug": "pug src/**/*.pug -o build",
@@ -12,8 +11,16 @@
     "watch:serve": "browser-sync start --server build --files 'build/*.css, build/*.html'",
     "dev": "pnpm '/^watch:.*/'"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "pug",
+    "livereload",
+    "browsersync",
+    "html"
+  ],
+  "author": "c99rahul",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^3.0.2",
